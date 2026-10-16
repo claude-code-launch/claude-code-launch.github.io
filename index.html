@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ccl — Claude Code Launch</title>
+<meta name="description" content="ccl is an open-source command-line launcher and protocol proxy that runs Claude Code against other model providers.">
+<style>
+  :root { color-scheme: light dark; --fg: #1f2328; --muted: #59636e; --bg: #ffffff; --link: #0969da; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e6edf3; --muted: #9198a1; --bg: #0d1117; --link: #4493f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 2em; margin: 0 0 4px; }
+  .tagline { color: var(--muted); margin: 0 0 32px; }
+  a { color: var(--link); }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ccl</h1>
+  <p class="tagline">Claude Code Launch — an open-source launcher and protocol proxy for Claude Code.</p>
+
+  <p>ccl runs Anthropic's Claude Code CLI against other model sources: Anthropic-compatible gateways, OpenAI-compatible APIs and several subscription logins. It runs entirely on your own computer; there are no ccl servers or accounts.</p>
+
+  <h2>Google Drive sync</h2>
+  <p><code>ccl cloud login</code> can sync your ccl configuration between your own computers through Google Drive. ccl requests only the <code>drive.appdata</code> scope and stores one encrypted file in the app's private application data folder in your Drive. It cannot see your other Drive files and does not request your name or email address. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+  <h2>Links</h2>
+  <ul>
+    <li><a href="https://github.com/claude-code-launch/ccl">Source code and documentation on GitHub</a></li>
+    <li><a href="privacy.html">Privacy Policy / 隐私政策</a></li>
+    <li><a href="terms.html">Terms of Service / 服务条款</a></li>
+  </ul>
+
+  <h2>中文</h2>
+  <p>ccl 是开源的 Claude Code 启动器与协议代理，让 Claude Code 使用其他模型来源；它完全在你的电脑上运行，没有服务器和账号体系。<code>ccl cloud login</code> 可通过 Google Drive 在你自己的电脑之间同步 ccl 配置，只申请 <code>drive.appdata</code> 权限，在应用专属数据文件夹中保存一个加密文件。详见<a href="privacy.html">隐私政策</a>与<a href="terms.html">服务条款</a>。</p>
+
+  <footer>MIT License · <a href="https://github.com/claude-code-launch/ccl/issues">Contact</a></footer>
+</main>
+</body>
+</html>

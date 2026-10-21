@@ -1,5 +1,5 @@
 ---
-title: ccl Terms of Service
+title: Terms of Service
 permalink: /terms.html
 ---
 
